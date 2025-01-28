@@ -4,6 +4,9 @@
 	background-color: chocolate;
 	border-radius: 60%;
 	position: fixed;
+	top: 80px;
+	right: 50px;
+	border: dotted;
 	animation: bounce 3s infinite;
 }
 
@@ -13,6 +16,9 @@
 	background-color: red;
 	border-radius: 40%;
 	position: fixed;
+	top: 80px;
+	right: 50px;
+	border: dotted;
 	animation: bounce 5s infinite;
 }
 
