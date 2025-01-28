@@ -1,0 +1,19 @@
+.ball{
+	
+	width: 100px;
+	height: 100px;
+	background-color: chocolate;
+	border-radius: 60%;
+	position: fixed;
+	animation: bounce 3s infinite;
+}
+
+@keyframes bounce{
+	0%{transform: translateY(0);
+		border-color: red;
+		border-width: 10px}
+	50%{transform: translateY(-30px);
+		border-color: black;}
+	100%{transform:translateY(0px);
+	}
+}
