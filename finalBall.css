@@ -1,45 +1,60 @@
+/* Basic styling for the page */
+body {
+  background-color: #2c3e50; /* Darker background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.ball-container {
+  position: relative;
+  width: 600px; /* Make the container wider to fit balls horizontally */
+  height: 200px; /* Container height remains fixed */
+  background-color: #ecf0f1; /* Lighter background for the container */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  display: flex; /* Use flexbox to align balls horizontally */
+  justify-content: space-evenly; /* Space balls evenly */
+  align-items: flex-end; /* Align balls to the bottom of the container */
+  padding: 10px;
+}
+
+/* Styling for the balls */
 .ball {
-	width: 100px;
-	height: 100px;
-	background-color: chocolate;
-	border-radius: 60%;
-	position: fixed;
-	top: 80px;
-	right: 50px;
-	border: 10px dotted red; /* Defined border width */
-	animation: bounce 3s infinite;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.ball1 {
+  background-color: #ff6347; /* Tomato color */
+  animation: bounce1 1.5s infinite ease-in-out;
 }
 
 .ball2 {
-	width: 50px;
-	height: 50px;
-	background-color: red;
-	border-radius: 40%;
-	position: fixed;
-	top: 80px;
-	right: 50px;
-	border: 5px dotted black; /* Defined border width */
-	animation: bounce 5s infinite;
+  background-color: #32cd32; /* Lime green color */
+  animation: bounce2 1.5s infinite ease-in-out;
 }
 
-body {
-    background-color: blue;
+/* Animation for ball 1 */
+@keyframes bounce1 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
 }
 
-@keyframes bounce {
-	0% {
-		transform: translateY(0);
-		border-color: red;
-		border-width: 10px;
-	}
-	50% {
-		transform: translateY(-30px);
-		border-color: black;
-		border-width: 10px; /* Ensuring border-width consistency */
-	}
-	100% {
-		transform: translateY(0);
-		border-color: red;
-		border-width: 10px; /* Ensuring border-width consistency */
-	}
+/* Animation for ball 2 */
+@keyframes bounce2 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
 }
