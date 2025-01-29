@@ -6,7 +6,7 @@
 	position: fixed;
 	top: 80px;
 	right: 50px;
-	border: dotted;
+	border: 10px dotted red; /* Defined border width */
 	animation: bounce 3s infinite;
 }
 
@@ -18,7 +18,7 @@
 	position: fixed;
 	top: 80px;
 	right: 50px;
-	border: dotted;
+	border: 5px dotted black; /* Defined border width */
 	animation: bounce 5s infinite;
 }
 
@@ -35,8 +35,11 @@ body {
 	50% {
 		transform: translateY(-30px);
 		border-color: black;
+		border-width: 10px; /* Ensuring border-width consistency */
 	}
 	100% {
 		transform: translateY(0);
+		border-color: red;
+		border-width: 10px; /* Ensuring border-width consistency */
 	}
 }
